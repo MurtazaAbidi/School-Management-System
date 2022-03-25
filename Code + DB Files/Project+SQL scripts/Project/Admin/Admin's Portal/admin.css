@@ -1,0 +1,36 @@
+
+.boundary{
+    padding: 20px 20px; 
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+}
+.Options{
+    color: black;
+    background-image: linear-gradient( rgb(132, 0, 146, 0.6), white);
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px ;
+    font-size: 45px;
+    border: 2px solid black; 
+    margin-left: 10px;
+    transition:  all 0.3s ease-in-out;
+}
+
+.Options:hover{
+    background-color: black; 
+    transition: 0.8s;
+    transform: scale(1.05);
+    
+}
+
+@media screen and (max-width:900px){
+	.boundary{
+        top:20px;
+    }
+    .Options{
+        display: flex;
+    }	
+}
+

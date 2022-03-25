@@ -1,0 +1,2 @@
+->First of all import the given SQL Scripts of Database(Named Database as "School Management System") in your local host server (XAMPP)
+->Place the "Project" folder in "htdocs" (Location: xampp->htdocs)

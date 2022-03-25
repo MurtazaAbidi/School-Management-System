@@ -1,0 +1,251 @@
+*{
+	margin:  0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-image: linear-gradient(rgb(255, 244, 255),#ffabff);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	background-color: rgb(132 0 146);
+	font-family: 'Dancing Script', cursive;
+}
+
+.logo{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #ffebfe;
+}
+
+.nav-links{
+	display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a {
+	color: #ffebfe;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav-links a:hover, a.active{
+	color: rgb(199, 199, 199);
+	text-decoration: underline;
+	border-radius: 3px;
+	transition: 0.8s;
+}
+
+.burger{
+	display:none;
+}
+
+.burger div{
+	width: 26px;
+	height: 3px;
+	background-color: #ffebfe;
+	margin: 5px;
+	border-radius: 150px;
+	transition: all 0.3s ease;
+}
+
+.btn{
+	padding: 6px 73px;
+	margin-top: 15px;
+	background-color: lightyellow;
+	border-radius: 99px;
+	transition: all 0.3s ease-in-out
+}
+	
+.btn:hover{
+	background-color: rgb(227, 115, 255);
+	text-decoration: underline;
+	transform: scale(1.04);
+	transition: 1s;
+}
+
+.table{
+    width:90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table td, .table th{
+    padding: 12px 15px;
+    border: 2px solid black; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.table th{
+    background-color: #cc56cc;
+    position:sticky;
+    top:0px;
+}
+
+
+.right{
+    /* border: 2px solid red; */
+    text-align: right;
+    padding : 15px 50px;
+}
+
+.sidebtn{
+    display: inline-block;
+    border: 2px solid black;
+    color: #fff5ff;
+    font-size: 25px;
+    border-radius: 34px;
+    padding: 4px;
+    background-color: #953a95;
+    transition:  all 0.3s ease-in-out;
+}
+
+.sidebtn:hover{
+    background-image:linear-gradient(black,#cc56cc);
+    transition: 1s;
+    color: #cfcfcf;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.subbtn{
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    background-color: #f4d7ff;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.subbtn:hover{
+    transition: 1s;
+    background-color: rgb(246, 147, 255);    
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.top{
+    font-size: 30px;
+    /* border: 2px solid red; */
+    text-align: center;
+    font-weight: bold;
+}
+
+.formHeading{
+    padding-bottom: 15px;
+    display: inline-block;
+}
+.container{
+    padding: 20px 0px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    width: 420px;
+    left: 200px;
+}
+
+.container form input, .select{
+padding: 6px 0px;
+width: 408px;
+/* border: 2px solid; */
+margin-bottom: 7px;
+font-size: 18px;
+border-radius: 26px;
+text-align: center;
+}
+
+.output{
+	position: absolute;
+	left: 60%;
+	top: 50%;
+}
+	
+.select{
+	cursor: pointer;
+	border: 2px solid black;
+}
+	
+	
+
+
+@media screen and (max-width:1030px){
+	.nav-links{
+		width:50%;
+	}
+}
+
+@media screen and (max-width:660px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position:absolute;
+		right:0px;
+		height:92vh;
+		top:10vh;
+		background-color: rgb(132 0 146);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translate(100%);
+		transition: transform 0.5s ease-in ; 		
+		
+	}
+	.nav-links li{
+		opacity: 0.8;
+	}
+	
+	.burger{
+		display:block;
+		cursor: pointer;
+	}
+	
+	.nav-active{
+		transform: translate(0%);
+	}
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}

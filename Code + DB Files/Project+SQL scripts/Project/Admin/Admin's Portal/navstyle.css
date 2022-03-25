@@ -1,0 +1,168 @@
+*{
+	margin:  0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-image: linear-gradient(rgb(255, 244, 255),#ffabff);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	background-color: rgb(132 0 146);
+	font-family: 'Dancing Script', cursive;
+}
+
+.logo{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+.logo a{
+	text-decoration: none;
+	color: #ffebfe;
+}
+
+.nav-links{
+	display:flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a {
+	color: #ffebfe;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav-links a:hover, a.active{
+	color: rgb(199, 199, 199);
+	text-decoration: underline;
+	border-radius: 3px;
+	transition: 0.8s;
+}
+
+.burger{
+	display:none;
+}
+
+.burger div{
+	width: 26px;
+	height: 3px;
+	background-color: #ffebfe;
+	margin: 5px;
+	border-radius: 150px;
+	transition: all 0.3s ease;
+}
+
+
+.boundary1{
+    padding: 20px 20px; 
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+}
+.Options1{
+    color: black;
+    background-image: linear-gradient( rgb(132, 0, 146, 0.6), white);
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px ;
+    font-size: 45px;
+    border: 2px solid black; 
+    margin-left: 10px;
+    transition:  all 0.3s ease-in-out;
+}
+
+.Options1:hover{
+    background-color: black; 
+    transition: 0.8s;
+    transform: scale(1.05);
+    
+}
+
+@media screen and (max-width:900px){
+	.boundary1{
+        top:20px;
+    }
+    .Options1{
+        display: flex;
+    }	
+}
+
+
+
+@media screen and (max-width:1030px){
+	.nav-links{
+		width:50%;
+	}
+}
+
+@media screen and (max-width:660px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position:absolute;
+		right:0px;
+		height:92vh;
+		top:10vh;
+		background-color: rgb(132 0 146);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translate(100%);
+		transition: transform 0.5s ease-in ; 		
+		
+	}
+	.nav-links li{
+		opacity: 0.8;
+	}
+	
+	.burger{
+		display:block;
+		cursor: pointer;
+	}
+	
+	.nav-active{
+		transform: translate(0%);
+	}
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}

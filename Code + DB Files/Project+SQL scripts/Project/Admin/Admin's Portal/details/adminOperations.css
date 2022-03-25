@@ -1,0 +1,208 @@
+.table{
+    width:90%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table td, .table th{
+    padding: 12px 15px;
+    border: 2px solid black; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.table th{
+    background-color: #cc56cc;
+    position:sticky;
+    top:0px;
+}
+
+
+.right{
+    /* border: 2px solid red; */
+    text-align: right;
+    padding : 15px 50px;
+}
+
+.sidebtn{
+    display: inline-block;
+    border: 2px solid black;
+    color: #fff5ff;
+    font-size: 25px;
+    border-radius: 34px;
+    padding: 4px;
+    background-color: #953a95;
+    transition:  all 0.3s ease-in-out;
+}
+
+.sidebtn:hover{
+    background-image:linear-gradient(black,#cc56cc);
+    transition: 1s;
+    color: #cfcfcf;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.subbtn{
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    background-color: #f4d7ff;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.subbtn:hover{
+    transition: 1s;
+    background-color: rgb(246, 147, 255);    
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.top{
+    font-size: 30px;
+    /* border: 2px solid red; */
+    text-align: center;
+    font-weight: bold;
+}
+
+.table1{
+    display: inline-table;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table1 td, .table1 th{
+    padding: 12px 15px;
+    border: 2px solid black; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.table1 th{
+    background-color: #cc56cc;
+}
+
+.subtable{
+    padding: 50px 50px;
+    display: inline-flex;
+
+}
+
+.boundary1{
+    text-align: center;
+}
+
+.subheading{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boundary{
+padding: 11px 51px;
+/* display: inline-block; */
+position: relative;
+/* margin-top: 10%; */
+/* border: 2px solid red; */
+border-top: 1.5px solid black;
+border-bottom: 1.5px solid black;
+/* text-align: center; */
+background-color: rgb(132 0 146);	
+}
+.Options{
+color: black;
+background-image: linear-gradient( rgb(132, 0, 146, 0.6), white);
+/* border-radius: 20px; */
+cursor: pointer;
+display: inline-block;
+padding: 12px;
+font-size: 28px;
+border: 2px solid black;
+font-weight: bold;
+/* margin-left: 10px; */
+transition: all 0.3s ease-in-out;
+}
+
+.Options:hover{
+text-decoration: underline;
+background-color: black; 
+transition: 0.8s;
+transform: scale(1.05);
+}
+
+.act{
+text-decoration: underline;
+}
+
+.formHeading{
+    padding-bottom: 15px;
+    display: inline-block;
+}
+.container{
+    padding: 20px 0px;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    width: 420px;
+    left: 200px;
+}
+
+.container form input, .select{
+padding: 6px 0px;
+width: 408px;
+/* border: 2px solid; */
+margin-bottom: 7px;
+font-size: 18px;
+border-radius: 26px;
+text-align: center;
+}
+
+.btn{
+padding: 6px 73px;
+margin-top: 15px;
+background-color: lightyellow;
+border-radius: 99px;
+transition: all 0.3s ease-in-out
+}
+
+.btn:hover{
+color:gray;
+background-color: yellow;
+text-decoration: underline;
+transform: scale(1.04);
+transition: 1s;
+}
+
+.output{
+position: absolute;
+left: 60%;
+top: 50%;
+}
+
+.select{
+cursor: pointer;
+border: 2px solid black;
+}
+
+.hidepass{
+    border: 2px solid black;
+    color: #cc56cc;
+    background-color: #cc56cc;
+}
+
+.hidepass:hover{
+    color: black;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width:900px){
+.boundary{
+    top:20px;
+}
+.Options{
+    display: flex;
+}	
+}
