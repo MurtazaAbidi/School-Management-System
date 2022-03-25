@@ -16,4 +16,4 @@
 # How To Run:
   1) First of all import the given SQL Scripts of Database(Named Database as "School Management System") in your local host server (XAMPP)
   2) Place the "Project" folder in "htdocs" (Location: xampp->htdocs)
-
+  3) Admin's Info: a) Username:"admin" .. b) Password:"admin"
